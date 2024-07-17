@@ -12,7 +12,7 @@ public class FindStringFrequency {
 				var key = e.charAt(i);
 
 				if (map.containsKey(key)) {
-					map.put(key, map.get(key).intValue() + 1);
+					map.put(key, map.get(key) + 1);
 				} else {
 					map.put(key, 1);
 				}
@@ -33,14 +33,14 @@ public class FindStringFrequency {
 				var left = e.charAt(i);
 
 				if (map.containsKey(left)) {
-					map.put(left, map.get(left).intValue() + 1);
+					map.put(left, map.get(left) + 1);
 				} else {
 					map.put(left, 1);
 				}
 
 				var right = e.charAt(j);
 				if (map.containsKey(right)) {
-					map.put(right, map.get(right).intValue() + 1);
+					map.put(right, map.get(right) + 1);
 				} else {
 					map.put(right, 1);
 				}
